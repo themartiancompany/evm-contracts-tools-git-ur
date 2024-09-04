@@ -6,12 +6,12 @@
 _os="$( \
   uname \
     -o)"
-_git=true
-_offline=true
+_git=false
+_offline=false
 _proj="hip"
 _pkgname=evm-contracts-tools
 pkgname="${_pkgname}-git"
-pkgver=0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.r1.g21e888e
+pkgver="0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.1".r0.g"f322c950e3172772b46a5a4fa5b6ccb387e1d580"
 pkgrel=1
 _pkgdesc=(
   "EVM smart contracts tools."
