@@ -1,0 +1,20 @@
+pkgbase = evm-contracts-tools-git
+	pkgdesc = EVM smart contracts tools.
+	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.r1.g21e888e
+	pkgrel = 1
+	url = https://github.com/themartiancompany/evm-contracts-tools
+	arch = any
+	groups = hip
+	groups = hip-git
+	license = AGPL3
+	checkdepends = shellcheck
+	makedepends = make
+	makedepends = git
+	depends = libcrash-bash
+	depends = nodejs-ethers
+	provides = evm-contracts-tools=0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.r1.g21e888e
+	conflicts = evm-contracts-tools
+	source = evm-contracts-tools-master::git+file:///data/data/com.termux/files/home/evm-contracts-tools#branch=master
+	sha256sums = SKIP
+
+pkgname = evm-contracts-tools-git
