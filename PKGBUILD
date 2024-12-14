@@ -9,6 +9,7 @@ _os="$( \
 _git=false
 _offline=false
 _proj="hip"
+_node="nodejs"
 _pkgname=evm-contracts-tools
 pkgname="${_pkgname}-git"
 pkgver="0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.1".r0.g"f322c950e3172772b46a5a4fa5b6ccb387e1d580"
@@ -31,8 +32,12 @@ license=(
   AGPL3
 )
 depends=(
+  "evm-contracts-abi-get"
+  "evm-wallet"
   "libcrash-bash"
-  "nodejs-ethers"
+  "libcrash-js"
+  "${_node}"
+  "${_node}-ethers"
 )
 makedepends=(
   make
@@ -41,6 +46,7 @@ checkdepends=(
   shellcheck
 )
 optdepends=(
+  "evm-chains-info: automatic RPC selection for many blockchains"
 )
 [[ "${_os}" == 'Android' ]] && \
   optdepends+=(
